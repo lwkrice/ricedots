@@ -1,0 +1,40 @@
+#TabsToolbar {
+  visibility: collapse !important;
+}
+
+#urlbar,
+#urlbar-background {
+  background: #141514 !important;
+  border: none !important;
+  color: #f2e0e0 !important;
+}
+
+#nav-bar {
+  background: #141514 !important;
+}
+
+#sidebar-header {
+  display: none !important;
+}
+
+.urlbarView-row[selected],
+.urlbarView-row:hover {
+  background-color: rgba(224, 122, 122, 0.15) !important;
+  color: inherit !important;
+}
+
+.urlbarView-row[selected] {
+  background-color: rgba(224, 122, 122, 0.22) !important;
+}
+
+#urlbar[focused="true"] {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #e07a7a !important;
+}
+
+#urlbar-input::selection,
+#urlbar-input::-moz-selection {
+  background: rgba(224, 122, 122, 0.25) !important;
+  color: #f2e0e0 !important;
+}

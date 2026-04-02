@@ -1,0 +1,50 @@
+.theme-dark {
+
+  --background-primary: #141514;
+  --background-secondary: #141514;
+  --background-secondary-alt: #141514;
+
+  --text-normal: #f2e0e0;
+  --text-muted: #b89898;
+
+  --interactive-accent: #f16e65;
+  --interactive-accent-hover: #d85c55;
+}
+
+.view-content,
+.markdown-source-view,
+.markdown-preview-view {
+  background-color: #141514 !important;
+  color: #f2e0e0 !important;
+}
+
+button,
+.mod-cta {
+  background-color: #f16e65 !important;
+  color: #000000 !important;
+  border: none !important;
+}
+
+button:hover,
+.mod-cta:hover {
+  background-color: #d85c55 !important; /* darker */
+  color: #000000 !important;
+}
+
+button:active,
+.mod-cta:active {
+  background-color: #c44e48 !important;
+  color: #000000 !important;
+}
+
+::selection {
+  background-color: #f16e65 !important;
+  color: #000000 !important;
+}
+
+.cm-selectionBackground,
+.cm-editor .cm-selectionBackground,
+.markdown-source-view.mod-cm6 .cm-selectionBackground {
+  background-color: #f16e65 !important;
+  color: #000000 !important;
+}
