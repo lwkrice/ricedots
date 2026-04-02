@@ -1,0 +1,13 @@
+/*****----- Colors -----*****/
+
+* {
+    font:            "Terminess Nerd Font Bold 13";
+
+    background:     #1a1918FF;
+    background-alt: #1a1918FF;
+    foreground:     #f2e0e0FF;
+    selected:       #f16e65FF;
+    border:         #f16e65FF;
+    active:         #7ec97eFF;
+    urgent:         #f16e65FF;
+}

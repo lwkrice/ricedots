@@ -1,0 +1,175 @@
+/*****----- Configuration -----*****/
+configuration {
+    modi:                       "drun,run";
+    show-icons:                 false;
+    display-drun:               "";
+    display-run:                "";
+    drun-display-format:        "{name}";
+    window-format:              "{w} · {c} · {t}";
+}
+
+/*****----- Global Properties -----*****/
+@import "~/.config/rofi/theme/colors.rasi"
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    north;
+    anchor:                      north;
+    fullscreen:                  false;
+    width:                       22%;
+    x-offset:                    0px;
+    y-offset:                    20px;
+
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      1px solid;
+    border-radius:               0px;
+    border-color:                @border;
+    background-color:            @background;
+    cursor:                      "default";
+    children:                    [ horibox ];
+}
+
+/*****----- Horizontal Box -----*****/
+horibox {
+    spacing:                     0px;
+    background-color:            @background;
+    text-color:                  @foreground;
+    orientation:                 horizontal;
+    children:                    [ "prompt", "entry", "listview" ];
+}
+
+/*****----- Prompt -----*****/
+prompt {
+    enabled:                     true;
+    padding:                     10px 10px;
+    background-color:            @background;
+    text-color:                  @selected;
+}
+
+/*****----- Entry -----*****/
+entry {
+    enabled:                     true;
+    padding:                     10px;
+    expand:                      false;
+    width:                       200px;
+    background-color:            @background;
+    text-color:                  #f2e0e0FF;
+    cursor:                      text;
+    placeholder:                 "Search...";
+    placeholder-color:           #b89898FF;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       1;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      horizontal;
+    reverse:                     false;
+    fixed-height:                false;
+    fixed-columns:               true;
+
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    background-color:            @background;
+    text-color:                  @foreground;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     10px 14px;
+    border:                      0px solid;
+    border-radius:               0px;
+    background-color:            @background;
+    text-color:                  @foreground;
+    cursor:                      pointer;
+}
+
+element normal.normal {
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+
+element selected.normal {
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+
+element alternate.normal {
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+
+element normal.urgent,
+element selected.urgent,
+element alternate.urgent {
+    background-color:            @background;
+    text-color:                  @urgent;
+}
+
+element normal.active,
+element selected.active,
+element alternate.active {
+    background-color:            @background;
+    text-color:                  @active;
+}
+
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        0px;
+    cursor:                      inherit;
+}
+
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    highlight:                   inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+/*****----- Message -----*****/
+message {
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+
+textbox {
+    padding:                     8px;
+    border:                      0px solid;
+    border-radius:               0px;
+    background-color:            @background;
+    text-color:                  @foreground;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    highlight:                   none;
+    blink:                       true;
+    markup:                      true;
+}
+
+error-message {
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    background-color:            @background;
+    text-color:                  @urgent;
+}
