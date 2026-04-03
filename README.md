@@ -18,6 +18,10 @@ sudo pacman -S --needed foot rofi waybar awww mako
 ```
 sudo pacman -S --needed bluez bluez-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
 ```
+#### <!> Enable audio and Bluetooth services
+```
+sudo systemctl enable --now bluetooth.service pipewire.service pipewire-pulse.service wireplumber.service
+```
 
 ### Additional Packages
 1. **grim** and **slurp** - for screenshots  
@@ -26,6 +30,10 @@ sudo pacman -S --needed bluez bluez-utils pipewire pipewire-alsa pipewire-pulse 
 
 ```
 sudo pacman -S --needed grim slurp wf-recorder wl-clipboard cliphist
+```
+#### Enable clipboard history service for cliphist
+```
+systemctl --user enable --now cliphist.service
 ```
 
 ---
