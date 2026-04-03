@@ -1,0 +1,43 @@
+# mako config — hyprland
+default-timeout=4000
+ignore-timeout=0
+
+# layout
+anchor=top-right
+margin=10
+padding=14,18
+width=340
+height=80
+layer=overlay
+
+# appearance
+background-color=#141514
+text-color=#f2e0e0
+border-color=#f16e65
+border-radius=0
+border-size=2
+
+# font
+font=JetBrainsMono Nerd Font 11
+
+# icons
+icons=1
+icon-path=/usr/share/icons/Papirus/
+icon-location=left
+
+# urgency: low
+[urgency=low]
+border-color=#f2e0e0
+default-timeout=3000
+
+# urgency: normal
+[urgency=normal]
+border-color=#f16e65
+default-timeout=4000
+
+# urgency: critical
+[urgency=critical]
+background-color=#141514
+border-color=#f16e65
+text-color=#f16e65
+default-timeout=0
