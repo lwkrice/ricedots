@@ -74,3 +74,16 @@ window#waybar.hidden {
 #pulseaudio.muted {
     color: #3b403c;
 }
+
+#bluetooth {
+    padding: 0 14px;
+    color: #3b403c;
+}
+
+#bluetooth.on {
+    color: #f2e0e0;
+}
+
+#bluetooth.connected {
+    color: #f16e65;
+}
