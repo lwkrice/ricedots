@@ -58,7 +58,7 @@ entry {
     background-color:            @background;
     text-color:                  #f2e0e0FF;
     cursor:                      text;
-    placeholder:                 "Search...";
+    placeholder:                 "  Search";
     placeholder-color:           #b89898FF;
 }
 
@@ -68,11 +68,11 @@ listview {
     columns:                     1;
     lines:                       1;
     cycle:                       true;
-    dynamic:                     true;
+    dynamic:                     false;
     scrollbar:                   false;
     layout:                      horizontal;
     reverse:                     false;
-    fixed-height:                false;
+    fixed-height:                true;
     fixed-columns:               true;
 
     spacing:                     0px;
