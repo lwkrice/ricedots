@@ -1,11 +1,11 @@
 # Rice Dots
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Required Packages
-1. **foot** - a terminal for Wayland  
-2. **rofi** - a menu interface required for app launcher, powermenu, and applets  
-3. **waybar** - a status bar  
-4. **awww** - a wallpaper daemon  
-5. **mako** - a notification daemon  
+1. **foot** - a light-weight terminal emulator for wayland  
+2. **rofi** - a light-weight menu interface required for app launcher, powermenu, and applets  
+3. **waybar** - a light-weight status bar  
+4. **awww** - a light-weight wallpaper daemon  
+5. **mako** - a light-weight notification daemon  
 
 ```
 sudo pacman -S --needed foot rofi waybar awww mako
