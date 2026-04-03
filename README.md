@@ -1,51 +1,21 @@
-# ricedots
-a dark themed system with cherry accent
+# Rice Dots
+---
+## Required Packages
+<1> rofi - a menu interface required for app launcher,powermenu and applets
+<2> waybar - a status bar 
+<3> awww - a wallpaper daemon 
+<4> mako - a notification daemon
 
-## Previews
+# Basic Packages
+<1> bluez and bluez-utils - for bluetooth
+<2> pipewire, pipewire-alsa, pipewire-pulse, pipewire-jack and wireplumber - for audio
 
-<table>
-<tr>
-<td align="center">
+# Additional Packages
+<1> grim and slurp - for screenshots
+<2> wf-recorder - for recording
+<3> wl-clipboard and cliphist - for clipboard
 
-### Fastfetch
-<img src="preview/fastfetch.png" width="400"/>
-
-</td>
-<td align="center">
-
-### Firefox
-<img src="preview/firefox.png" width="400"/>
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-### Foot
-<img src="preview/foot.png" width="400"/>
-
-</td>
-<td align="center">
-
-### Obsidian
-<img src="preview/obsidian.png" width="400"/>
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-### Rofi
-<img src="preview/rofi.png" width="400"/>
-
-</td>
-<td align="center">
-
-### Waybar
-<img src="preview/waybar.png" width="400"/>
-
-</td>
-</tr>
-</table>
+## The Theme 
+background - #141514
+foreground - #f2e0e0
+accent - #f16e65
