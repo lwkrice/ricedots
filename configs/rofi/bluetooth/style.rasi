@@ -1,0 +1,48 @@
+@import "~/.config/rofi/theme/colors.rasi"
+
+configuration {
+    show-icons: false;
+}
+
+window {
+    location: north east;
+    anchor: north east;
+    x-offset: -15px;
+    y-offset: 15px;
+    width: 260px;
+    border: 1px solid;
+    border-radius: 0px;
+    border-color: @border;
+    background-color: @background;
+}
+
+mainbox {
+    background-color: @background;
+    children: [ "listview" ];
+}
+
+listview {
+    columns: 1;
+    lines: 3;
+    scrollbar: false;
+    background-color: @background;
+}
+
+element {
+    padding: 10px 14px;
+    border-radius: 0px;
+    background-color: @background;
+    text-color: @foreground;
+}
+
+element selected.normal {
+    background-color: @background;
+    text-color: @selected;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+}

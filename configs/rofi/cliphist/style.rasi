@@ -1,0 +1,140 @@
+/*****----- Configuration -----*****/
+configuration {
+    modi:                       "dmenu";
+    show-icons:                 false;
+    display-dmenu:              "";
+}
+
+/*****----- Colors -----*****/
+* {
+    font:                       "Terminess Nerd Font Bold 13";
+    background:                 #1a1918FF;
+    background-alt:             #211f1eFF;
+    foreground:                 #f2e0e0FF;
+    selected:                   #f16e65FF;
+    border-col:                 #f16e65FF;
+    muted:                      #b89898FF;
+}
+
+/*****----- Main Window -----*****/
+window {
+    location:                   center;
+    anchor:                     center;
+    animation:                  false;
+    fullscreen:                 false;
+    width:                      30%;
+    
+    x-offset:                   0px;
+    y-offset:                   20px;
+    
+    margin:                     0px;
+    padding:                    0px;
+    
+    border:                     1px solid;
+    border-radius:              0px;
+    border-color:               @border-col;
+    background-color:           @background;
+    cursor:                     "default";
+    children:                   [ mainbox ];
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    spacing:                    0px;
+    background-color:           @background;
+    orientation:                vertical;
+    children:                   [ "inputbar", "listview" ];
+}
+
+/*****----- Input Bar -----*****/
+inputbar {
+    spacing:                    0px;
+    padding:                    0px;
+    background-color:           @background;
+    border:                     0px 0px 1px 0px solid;
+    border-color:               @border-col;
+    children:                   [ "prompt", "entry" ];
+}
+
+/*****----- Prompt -----*****/
+prompt {
+    enabled:                    true;
+    padding:                    11px 12px;
+    background-color:           @background;
+    text-color:                 @selected;
+}
+
+/*****----- Entry -----*****/
+entry {
+    enabled:                    true;
+    padding:                    11px 11px 11px 0px;
+    expand:                     true;
+    background-color:           @background;
+    text-color:                 @foreground;
+    cursor:                     text;
+    placeholder:                "Search Clipboard History";
+    placeholder-color:          @muted;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                    true;
+    columns:                    1;
+    lines:                      12;
+    cycle:                      true;
+    dynamic:                    false;
+    scrollbar:                  false;
+    layout:                     vertical;
+    reverse:                    false;
+    fixed-height:               true;
+    fixed-columns:              true;
+
+    spacing:                    0px;
+    margin:                     0px;
+    padding:                    0px;
+    background-color:           @background;
+    text-color:                 @foreground;
+    cursor:                     "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                    true;
+    spacing:                    0px;
+    margin:                     0px;
+    padding:                    9px 14px;
+    border:                     0px 0px 1px 0px solid;
+    border-color:               @background-alt;
+    border-radius:              0px;
+    background-color:           @background;
+    text-color:                 @foreground;
+    cursor:                     pointer;
+}
+
+element normal.normal {
+    background-color:           @background;
+    text-color:                 @foreground;
+}
+
+element selected.normal {
+    background-color:           @background-alt;
+    text-color:                 @selected;
+}
+
+element alternate.normal {
+    background-color:           @background;
+    text-color:                 @muted;
+}
+
+element-icon {
+    size:                       0px;
+}
+
+element-text {
+    background-color:           transparent;
+    text-color:                 inherit;
+    highlight:                  inherit;
+    cursor:                     inherit;
+    vertical-align:             0.5;
+    horizontal-align:           0.0;
+}
