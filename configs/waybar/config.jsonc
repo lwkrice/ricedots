@@ -17,7 +17,8 @@
     "modules-right": [
         "cpu",
         "memory",
-        "pulseaudio"
+        "pulseaudio",
+	"bluetooth"
     ],
 
     "hyprland/workspaces": {
@@ -52,5 +53,13 @@
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "scroll-step": 5,
         "tooltip": false
+    },
+
+    "bluetooth": {
+    "format-on": "",
+    "format-off": "",
+    "format-connected": "",
+    "on-click": "~/.config/rofi/bluetooth/bt.sh",
+    "tooltip": false
     }
 }
