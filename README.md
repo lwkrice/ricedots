@@ -29,7 +29,7 @@ sudo systemctl enable --now bluetooth.service pipewire.service pipewire-pulse.se
 ```
 sudo pacman -S --needed grim slurp wf-recorder wl-clipboard cliphist
 ```
-#### Enable clipboard history service for cliphist
+#### <!> Enable clipboard history service for cliphist
 ```
 systemctl --user enable --now cliphist.service
 ```
