@@ -1,0 +1,39 @@
+#catppuccin(@flavor) {
+  #lib.palette();
+
+  @base: #141514;
+  @mantle: #121312;
+  @crust: #0f100f;
+
+  @surface0: #1e1f1e;
+  @surface1: #2a2d2a;
+  @surface2: #3b403c;
+
+  @text: #f2e0e0;
+  @subtext1: #d9cdb5;
+  @subtext0: #b89898;
+
+  @overlay2: #a08989;
+  @overlay1: #8a6f6f;
+  @overlay0: #6b1f1f;
+
+  @accent: #f16e65;
+  @red: #e03030;
+  @maroon: #c03030;
+
+  @mauve: #f16e65;
+  @pink: #f16e65;
+  @flamingo: #f16e65;
+  @rosewater: #f2e0e0;
+  @lavender: #f16e65;
+
+  @blue: #71b4d6;
+  @green: #7ec97e;
+  @yellow: #ef934d;
+  @peach: #ef934d;
+  @teal: #7ec9a3;
+  @sapphire: #71b4d6;
+  @sky: #71b4d6;
+
+  #lib.defaults();
+  #lib.css-variables();
