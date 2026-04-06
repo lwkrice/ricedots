@@ -42,3 +42,8 @@ systemctl --user enable --now cliphist.service
 - **accent** - #f16e65 
 
 ---
+
+## Reccomended Additions
+1. **Icon-Theme** - Papirus-Icon-Theme w/ Papirus-folders
+2. **GTK-Theme** - Material-Black-Cherry
+3. **Cursor-Theme** - Babita-Modern-Classic
